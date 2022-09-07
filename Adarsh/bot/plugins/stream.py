@@ -105,15 +105,16 @@ async def private_receive_handler(c: Client, m: Message):
         msg_text ="""
 <b>ʏᴏᴜʀ ʟɪɴᴋ ɪs ɢᴇɴᴇʀᴀᴛᴇᴅ...⚡
 
-<b>📧 ғɪʟᴇ ɴᴀᴍᴇ :- </b> <i><b>{}</b></i>
+<b>🎬 Fɪʟᴇ ɴᴀᴍᴇ :- </b> <i><b>{}</b></i>
 
-<b>📦 ғɪʟᴇ sɪᴢᴇ :- </b> <i><b>{}</b></i>
+<b>📂 Fɪʟᴇ sɪᴢᴇ :- </b> <i><b>{}</b></i>
 
-<b>💌 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :- </b> <i><b>{}</b></i>
+<b>📥 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :- </b> <i><b>{}</b></i>
 
-<b>🖥 ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ :- </b> <i><b>{}</b></i>
+<b>🎞️ ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ :- </b> <i><b>{}</b></i>
 
-<b>♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛs ᴇxᴘɪʀᴇᴅ ♻️\n\n❖ YouTube.com/OpusTechz</b>"""
+<b>⚡ Nᴏᴛᴇ : LINK WON'T EXPIRE TILL I DELETE</b>
+<b>🦹 Powered By : @YourX 🦅 <b>"""
 
         await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True, quote=True)
         await m.reply_text(
@@ -122,8 +123,8 @@ async def private_receive_handler(c: Client, m: Message):
             
             quote=True,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⚡ ᴡᴀᴛᴄʜ ⚡", url=stream_link), #Stream Link
-                                                InlineKeyboardButton('⚡ ᴅᴏᴡɴʟᴏᴀᴅ ⚡', url=online_link)]]) #Download Link
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎞️ ᴡᴀᴛᴄʜ ", url=stream_link), #Stream Link
+                                                InlineKeyboardButton(' ᴅᴏᴡɴʟᴏᴀᴅ 📥', url=online_link)]]) #Download Link
         )
     except FloodWait as e:
         print(f"Sleeping for {str(e.x)}s")
@@ -158,8 +159,8 @@ async def channel_receive_handler(bot, broadcast):
             id=broadcast.id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ ᴡᴀᴛᴄʜ ⚡", url=stream_link),
-                     InlineKeyboardButton('⚡ ᴅᴏᴡɴʟᴏᴀᴅ ⚡', url=online_link)] 
+                    [InlineKeyboardButton("🎞️ ᴡᴀᴛᴄʜ ", url=stream_link),
+                     InlineKeyboardButton(' ᴅᴏᴡɴʟᴏᴀᴅ 📥', url=online_link)] 
                 ]
             )
         )
