@@ -121,8 +121,7 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.id)
 
-        msg_text = "**ᴛᴏᴜʀ ʟɪɴᴋ ɪs ɢᴇɴᴇʀᴀᴛᴇᴅ...⚡\n\n🎬 Fɪʟᴇ ɴᴀᴍᴇ :-\n{}\n {}\n\n📥 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :- {}\n\n⚡LINK WON'T EXPIRE TILL I DELETE \n\n</b>
-🦹 Powered By : @YourX 🦅 <b>**"
+        msg_text = "**ᴛᴏᴜʀ ʟɪɴᴋ ɪs ɢᴇɴᴇʀᴀᴛᴇᴅ...⚡\n\n📧 ғɪʟᴇ ɴᴀᴍᴇ :-\n{}\n {}\n\n💌 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :- {}\n\n♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛ ᴇxᴘɪʀᴇᴅ ♻️\n\n<b>❖ @YourX </b>**"
         await m.reply_text(            
             text=msg_text.format(file_name, file_size, stream_link),
             
